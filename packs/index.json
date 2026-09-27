@@ -6,25 +6,8 @@
    "sw"
   ],
   "thoughts": 3528,
-  "core": 224
- },
- {
-  "id": "am-fixture",
-  "title": "Amharic · fixture (12 lines)",
-  "targets": [
-   "am"
-  ],
-  "thoughts": 15,
-  "core": 11
- },
- {
-  "id": "ar-eg-fixture",
-  "title": "Arabic (Egypt) · fixture (12 lines)",
-  "targets": [
-   "ar-EG"
-  ],
-  "thoughts": 15,
-  "core": 11
+  "core": 224,
+  "swap": true
  },
  {
   "id": "fixture",
@@ -42,7 +25,7 @@
    "am"
   ],
   "thoughts": 253,
-  "core": 0
+  "core": 192
  },
  {
   "id": "starter-ar-EG",
@@ -51,7 +34,7 @@
    "ar-EG"
   ],
   "thoughts": 244,
-  "core": 0
+  "core": 184
  },
  {
   "id": "starter-sw",
@@ -59,7 +42,7 @@
   "targets": [
    "sw"
   ],
-  "thoughts": 240,
-  "core": 0
+  "thoughts": 1294,
+  "core": 876
  }
 ]
