@@ -1,0 +1,1 @@
+function e(e){return e===`recall`||e===`check`}export{e as t};

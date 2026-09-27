@@ -1,0 +1,1 @@
+var e=`AfriFluent`,t=`${/^[aeiou]/i.test(`AfriFluent`)?`an`:`a`} ${e}`,n=/s$/i.test(`AfriFluent`)?`${e}’`:`${e}’s`;export{n,t as r,e as t};
