@@ -1,1 +1,0 @@
-import{ft as e,mt as t}from"./state-BAxezHvw.js";function n(n,r){let i=t(r.target)??e(r.target);return!i||i.family!==`Bantu`||i.nounClasses!==`yes`?!1:n.packIndex.find(e=>e.id===n.pack?.id)?.swap??n.pack?.id===`ambi-sw`}function r(e){return e.target===`sw`}export{n,r as t};

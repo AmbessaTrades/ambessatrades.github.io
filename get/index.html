@@ -44,6 +44,13 @@
     .get:active { transform: scale(.98); }
     .get svg { width: 24px; height: 24px; flex: none; }
     .under { margin: 12px 0 0; color: var(--on-dye-2); font-size: 15px; }
+    .under + .under { margin-top: 2px; }
+    .chrome { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 16px 0 0; color: var(--on-dye); font-size: 15px; font-weight: 600; }
+    .chrome[hidden] { display: none; }
+    .chrome a {
+      display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 22px;
+      border: 1.5px solid var(--on-dye-2); color: var(--on-dye); text-decoration: none; font-weight: 700;
+    }
     main { padding: 28px 20px calc(env(safe-area-inset-bottom, 0px) + 40px); }
     h2 { margin: 0 0 8px; font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -.01em; }
     ul { margin: 0; padding-left: 1.2em; color: var(--ink-2); font-size: 16px; }
@@ -65,23 +72,22 @@
       <img class="icon" src="../icons/icon-192.png" width="96" height="96" alt="">
       <h1>AfriFluent<span class="dot" aria-hidden="true">.</span></h1>
       <p class="first">African languages, starting with Kiswahili (Kenya).</p>
-      <a class="get" href="https://github.com/AmbessaTrades/ambessatrades.github.io/releases/latest/download/AfriFluent.apk" data-apk>
+      <a class="get" href="https://ambessatrades.github.io/get/AfriFluent.apk" data-apk>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
         <span>Download for Android</span>
       </a>
-      <p class="under">Version <span data-version>0.3.0</span>. No account, no ads.</p>
+      <p class="under">Version <span data-version>0.3.1</span>. No account, no ads.</p>
+      <p class="under">One file for every Android phone (Android 5 and up).</p>
+      <p class="chrome" hidden data-chrome><span>Download stuck? Try Chrome.</span> <a href="intent://ambessatrades.github.io/get/#Intent;scheme=https;package=com.android.chrome;end">Open in Chrome</a></p>
     </div>
   </header>
   <main class="wrap">
     <h2>What’s new</h2>
     <ul>
-        <li>AfriFluent is an Android app now, with its own icon.</li>
-        <li>Moving over? Save a backup where you used it before, then choose that file in the app. Your teacher link comes along.</li>
-        <li>Listen keeps playing with the phone locked. Loop repeats the day’s sentences until you stop.</li>
-        <li>Soak for an hour or an hour and a half, hands free.</li>
-        <li>The Phrasebook is a map of places. A place takes colour as you say its lines.</li>
-        <li>Your teacher hears your lines on her own phone and sends her voice back.</li>
-        <li>Today waits for you: a slow start or an “um” never cuts you off.</li>
+        <li>A nudge when it’s time: one in the morning, one in the evening, none once today is done. Turn it off in Settings.</li>
+        <li>Your teacher can see when you’re practising, and gets a short note.</li>
+        <li>The app keeps the whole course on your phone, so it plays with no internet.</li>
+        <li>The Android download works in every browser.</li>
     </ul>
     <details>
       <summary><span>If your phone asks</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
@@ -95,5 +101,13 @@
     </details>
     <a class="browser" href="../">Or open it in your browser</a>
   </main>
+  <script>
+    // not Chrome on an Android phone (Brave says so with navigator.brave; others in their name): one line offers Chrome
+    (function () {
+      var ua = navigator.userAgent || '';
+      var chrome = ua.indexOf('Chrome/') >= 0 && !/EdgA|OPR|SamsungBrowser|YaBrowser|UCBrowser|Firefox|DuckDuckGo|Vivaldi|; wv[)]/.test(ua) && !navigator.brave;
+      if (/Android/i.test(ua) && !chrome) document.querySelector('[data-chrome]').hidden = false;
+    })();
+  </script>
 </body>
 </html>
