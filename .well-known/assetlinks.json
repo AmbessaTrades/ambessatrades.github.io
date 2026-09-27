@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.ambessatrades.afrifluent",
+      "sha256_cert_fingerprints": [
+        "33:5E:49:A2:C6:AA:93:86:0D:44:F4:C6:6F:38:C5:A6:BB:AE:DF:62:D4:26:30:7A:D0:74:8E:C0:93:0C:C7:00"
+      ]
+    }
+  }
+]

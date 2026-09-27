@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1C2A4D">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="AfriFluent for Android: speak African languages from your own life, starting with Kiswahili (Kenya).">
+  <title>AfriFluent for Android</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <style>
+    @font-face { font-family: 'Onest'; src: url('../assets/onest-v1-B1WfmGjH.woff2') format('woff2'); font-weight: 400 800; font-display: swap; }
+    :root {
+      --dye: #1C2A4D; --dye-2: #283A66; --on-dye: #F2F4F6; --on-dye-2: #B9C3DA; --chalk: #8E9CC0;
+      --ground: #F2F4F6; --ground-2: #E6EAEF; --ink: #141A2C; --ink-2: #3E4760; --ink-3: #59617A;
+      --line: #CDD3DD; --saffron: #F2A516;
+      --leaf: 6px 20px 6px 20px;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground: #0E1424; --ground-2: #151D33; --ink: #ECEFF5; --ink-2: #BAC2D4; --ink-3: #9AA3BA;
+        --line: #2A3450; --dye: #1A2645; color-scheme: dark;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--ground); color: var(--ink);
+      font-family: 'Onest', -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 17px; line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    .band { background: var(--dye); color: var(--on-dye); padding: calc(env(safe-area-inset-top, 0px) + 44px) 20px 32px; }
+    .wrap { max-width: 480px; margin: 0 auto; }
+    .icon { display: block; width: 96px; height: 96px; border-radius: 24px; outline: 1.5px solid var(--dye-2); }
+    h1 { margin: 20px 0 4px; font-size: 40px; line-height: 1.05; font-weight: 800; letter-spacing: -.025em; }
+    h1 .dot { color: var(--saffron); }
+    .first { margin: 0; max-width: 24rem; color: var(--on-dye-2); font-weight: 650; line-height: 1.35; text-wrap: balance; }
+    .get {
+      display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 60px; margin-top: 28px;
+      border-radius: var(--leaf); background: var(--on-dye); color: var(--dye); text-decoration: none;
+      font-size: 19px; font-weight: 750; letter-spacing: -.005em; -webkit-tap-highlight-color: transparent;
+    }
+    .get:active { transform: scale(.98); }
+    .get svg { width: 24px; height: 24px; flex: none; }
+    .under { margin: 12px 0 0; color: var(--on-dye-2); font-size: 15px; }
+    main { padding: 28px 20px calc(env(safe-area-inset-bottom, 0px) + 40px); }
+    h2 { margin: 0 0 8px; font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -.01em; }
+    ul { margin: 0; padding-left: 1.2em; color: var(--ink-2); font-size: 16px; }
+    li { margin: 6px 0; }
+    details { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 16px; }
+    summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 12px; list-style: none; font-weight: 650; color: var(--ink); }
+    summary::-webkit-details-marker { display: none; }
+    summary svg { width: 22px; height: 22px; flex: none; color: var(--ink-3); transition: transform .14s; }
+    details[open] summary svg { transform: rotate(180deg); }
+    ol { margin: 8px 0 0; padding-left: 1.3em; color: var(--ink-2); }
+    ol li { margin: 8px 0; }
+    b { color: var(--ink); font-weight: 650; }
+    .browser { display: inline-flex; align-items: center; min-height: 44px; margin-top: 20px; color: var(--ink-2); font-size: 15px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <img class="icon" src="../icons/icon-192.png" width="96" height="96" alt="">
+      <h1>AfriFluent<span class="dot" aria-hidden="true">.</span></h1>
+      <p class="first">African languages, starting with Kiswahili (Kenya).</p>
+      <a class="get" href="https://github.com/AmbessaTrades/ambessatrades.github.io/releases/latest/download/AfriFluent.apk" data-apk>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+        <span>Download for Android</span>
+      </a>
+      <p class="under">Version <span data-version>0.3.0</span>. No account, no ads.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <h2>What’s new</h2>
+    <ul>
+        <li>AfriFluent is an Android app now, with its own icon.</li>
+        <li>Moving over? Save a backup where you used it before, then choose that file in the app. Your teacher link comes along.</li>
+        <li>Listen keeps playing with the phone locked. Loop repeats the day’s sentences until you stop.</li>
+        <li>Soak for an hour or an hour and a half, hands free.</li>
+        <li>The Phrasebook is a map of places. A place takes colour as you say its lines.</li>
+        <li>Your teacher hears your lines on her own phone and sends her voice back.</li>
+        <li>Today waits for you: a slow start or an “um” never cuts you off.</li>
+    </ul>
+    <details>
+      <summary><span>If your phone asks</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ol>
+        <li>Chrome may warn about the file: tap <b>Download anyway</b>.</li>
+        <li>Tap <b>Open</b>, then <b>Install</b>.</li>
+        <li>If installs from Chrome are not allowed yet: tap <b>Settings</b>, turn on <b>Allow from this source</b>, go back, then tap <b>Install</b>.</li>
+        <li>If Play Protect asks: tap <b>Install anyway</b>.</li>
+      </ol>
+      <p>Already have it? Installing the new file keeps your progress.</p>
+    </details>
+    <a class="browser" href="../">Or open it in your browser</a>
+  </main>
+</body>
+</html>
